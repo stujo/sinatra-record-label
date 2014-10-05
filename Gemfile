@@ -9,7 +9,7 @@ gem 'sinatra-assetpack', :require => 'sinatra/assetpack'
 
 
 gem "sqlite3", :group => :development
-gem "postgres", :group => :production
+gem "pg", :group => :production
 
 
 
