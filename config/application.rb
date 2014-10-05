@@ -42,7 +42,7 @@ assets {
     '/assets/css/style.css'
   ]
 
-  js_compression  :yui    # :jsmin | :yui | :closure | :uglify
+  js_compression  :none    # :jsmin | :yui | :closure | :uglify
   css_compression :simple   # :simple | :sass | :yui | :sqwish
 }
 
