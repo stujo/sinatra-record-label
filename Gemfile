@@ -10,6 +10,6 @@ gem 'sinatra-assetpack', :require => 'sinatra/assetpack'
 gem "sqlite3", :group => :development
 gem "pg", :group => :production
 
-
+gem 'yui-compressor', :require => 'yui/compressor'
 
 
