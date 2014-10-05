@@ -11,7 +11,11 @@ set :root, APP_ROOT
 
 puts "Loading Record Label App in APP_ROOT=#{APP_ROOT}"
 
-set :database, {adapter: "sqlite3", database: "db/development.sqlite3"}
+if ENV['DATABASE_URL']
+  set :database, ENV['DATABASE_URL']
+else  
+  set :database, {adapter: "sqlite3", database: "db/development.sqlite3"} 
+end
 
 require  APP_ROOT + '/models/concerns/searchable.rb'
 
